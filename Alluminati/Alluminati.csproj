@@ -242,7 +242,7 @@
     <Content Include="Views\PaqueteServicio\Index.cshtml" />
     <Content Include="Views\SesionViajeServicio\Index.cshtml" />
     <Content Include="Views\TasaFijaServicio\Index.cshtml" />
-    <Content Include="Views\PagoServicio\Partial1.cshtml" />
+    <Content Include="Views\PagoServicio\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
