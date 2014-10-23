@@ -2,41 +2,116 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <!-- Fuentes css. -->
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Estilos. -->
+    <link href="~/Content/css/Site.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrapValidator.css" rel="stylesheet" />
+    <!-- Kendo css. -->
+    <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css" />
+    <!-- FIN Kendo css. -->
+    <!-- FIN Estilos. -->
+    <!-- Scripts. -->
+    <!-- Kendo js. -->
+    <script src="http://cdn.kendostatic.com/2014.2.716/js/jquery.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.all.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.aspnetmvc.min.js"></script>
+    <script src="~/Scripts/Shared/kendo.modernizr.custom.js"></script>
+    <!--
+    <script src="https://da7xgjtj801h2.cloudfront.net/2014.2.716/js/cultures/kendo.culture.es-ES.min.js"></script>
+    <script>
+        kendo.culture("es-ES");
+    </script>
+        -->
+    <!-- FIN Kendo js. -->
+    <script src="~/Scripts/Shared/bootstrap.min.js"></script>
+    <script src="~/Scripts/Shared/bootstrapValidator.js"></script>
+    <script src="~/Scripts/Shared/bootstrapValidator.es_ES.js"></script>
+    <script src="~/Scripts/Shared/bootstrap-filestyle.min.js"></script>
+    <script src="~/Scripts/Shared/bootbox.js"></script>
+    <script src="~/Scripts/Shared/jquery.ui.widget.js"></script>
+    <script src="~/Scripts/Shared/jquery.fileupload.js"></script>
+    <!-- FIN Scripts. -->
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+    <div id="wrapper">
+
+        <!-- Navegación. -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img id="logo" src="~/Content/Img/general/micon.png" class="img-responsive" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="@Url.Action("Index", "Modelos")">Modelos</a></li>
+                        <li><a href="@Url.Action("Index", "Valores")">Valores</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> Usuario<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="@Url.Action("Index", "Login")"><i class="fa fa-sign-out fa-fw"></i> Crear Nueva Cuenta</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+        </nav>
+        <!-- FIN Navegación. -->
+        <!-- Contenido. -->
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    @RenderBody()
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        <!-- FIN Contenido. -->
+        <!-- Footer. -->
+        <div id="footer" class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container-fluid" style="float:right;">
+                <p style="color:#b4afaf">Bienvenido</p>
+            </div>
+        </div>
+        <!-- FIN footer -->
+
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <!-- Data Section-->
+    <div id="filter-exclude" data-filter-exclude=""></div>
+    @RenderSection("data", required: false)
+    <!-- Scripts Section-->
+    <script>
+        $(document).ready(function () {
+            // Establecer default para bootbox.
+            bootbox.setDefaults({
+                title: 'Notifiación',
+                size: 'small',
+            });
+        });
+    </script>
+    <script src="~/Scripts/Shared/kendoGridFilter.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
