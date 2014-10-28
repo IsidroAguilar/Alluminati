@@ -131,10 +131,7 @@
     <Compile Include="Controllers\MisionController.cs" />
     <Compile Include="Controllers\ModelosController.cs" />
     <Compile Include="Controllers\PagoServicioController.cs" />
-    <Compile Include="Controllers\PaqueteServicioController.cs" />
-    <Compile Include="Controllers\SesionServicioController.cs" />
-    <Compile Include="Controllers\SesionViajeServicioController.cs" />
-    <Compile Include="Controllers\TasaFijaServicioController.cs" />
+    <Compile Include="Controllers\RegistroController.cs" />
     <Compile Include="Controllers\ValoresController.cs" />
     <Compile Include="Controllers\VisionController.cs" />
     <Compile Include="Global.asax.cs">
@@ -171,6 +168,7 @@
     <Content Include="Content\css\font-aweasome.min.css" />
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\Login.css" />
+    <Content Include="Content\css\Registro.css" />
     <Content Include="Content\css\Site.css" />
     <Content Include="Content\video\Alluminati.mp4" />
     <Content Include="favicon.ico" />
@@ -194,6 +192,7 @@
       <DependentUpon>AlluminatiModel.edmx</DependentUpon>
       <LastGenOutput>AlluminatiModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\Registro\Registro.js" />
     <Content Include="Scripts\Shared\bootbox.js" />
     <Content Include="Scripts\Shared\bootstrap-filestyle.min.js" />
     <Content Include="Scripts\Shared\bootstrap.js" />
@@ -243,6 +242,7 @@
     <Content Include="Views\SesionViajeServicio\Index.cshtml" />
     <Content Include="Views\TasaFijaServicio\Index.cshtml" />
     <Content Include="Views\PagoServicio\Index.cshtml" />
+    <Content Include="Views\Registro\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

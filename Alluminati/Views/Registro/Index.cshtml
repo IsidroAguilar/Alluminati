@@ -1,0 +1,83 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Alluminati | Registro";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <!-- Fuentes css. -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Estilos. -->
+    <link href="~/Content/css/Registro.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrapValidator.css" rel="stylesheet" />
+    <!-- Kendo css. -->
+    <link href="https://da7xgjtj801h2.cloudfront.net/2014.1.416/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://da7xgjtj801h2.cloudfront.net/2014.1.416/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://da7xgjtj801h2.cloudfront.net/2014.1.416/styles/kendo.default.min.css" rel="stylesheet" type="text/css" id="HojaUno" />
+    <link href="https://da7xgjtj801h2.cloudfront.net/2014.1.416/styles/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css" id="HojaDos" />
+    <!-- FIN Estilos. -->
+    <!-- Scripts. -->
+    <!-- Kendo js.-->
+    <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/jquery.min.js"></script>
+    <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/kendo.all.min.js"></script>
+    <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/kendo.aspnetmvc.min.js"></script>
+    <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/cultures/kendo.culture.es-ES.min.js"></script>
+    <script src="~/Scripts/kendo.modernizr.custom.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Shared/bootstrapValidator.js"></script>
+    <script src="~/Scripts/Shared/bootstrapValidator.es_ES.js"></script>
+    <script src="~/Scripts/Shared/bootbox.js"></script>
+    <!-- FIN Scripts. -->
+</head>
+<body>
+    <!-- Registro -->
+    <div class="container">
+        <div class="form-signin" role="form">
+            <form id="formRegistro">
+                <h2 class="form-signin-heading" style="width: 100%;align-content: center;margin-left: 20px;">Registro de Usuario</h2>
+                <div class="form-group">
+                    <input name="Usuario" class="form-control" type="text" placeholder="Usuario" />
+                </div>
+                <div class="form-group">
+                    <input id="Contrasena" name="Contrasena" class="form-control" type="password" placeholder="Contraseña" />
+                </div>
+                <div class="form-group">
+                    <input id="ValidaContrasena" name="ValidaContrasena" class="form-control" type="password" placeholder="Valida la Contraseña" />
+                </div>
+                <div class="form-group">
+                    <input id="Nombre" name="Nombre" class="form-control" type="text" placeholder="Nombre" />
+                </div>
+                <div class="form-group">
+                    <input id="ApellidoP" name="ApellidoP" class="form-control" type="text" placeholder="Apellido Paterno" />
+                </div>
+                <div class="form-group">
+                    <input id="ApellidoM" name="ApellidoM" class="form-control" type="text" placeholder="Apellido Materno" />
+                </div>
+                <div class="form-group">
+                    <input id="CorreoElectronico" name="CorreoElectronico" class="form-control" type="text" placeholder="Correo Electronico" />
+                </div>
+                <div class="form-group">
+                    <input id="Direccion" name="Direccion" class="form-control" type="text" placeholder="Direccion" />
+                </div>
+                <div class="form-group">
+                    <input id="Telefono" name="Telefono" class="form-control" type="tel" placeholder="Telefono" />
+                </div>
+                <br />
+                <button class="btn btn-lg btn-block" type="submit">Registrar Usuario</button>
+            </form>
+        </div>
+    </div>
+    <!-- FIN de Login -->
+    <!-- Datos de rutas. -->
+    <div id="Ingresar" data-url="@Url.Action("RegistroUsuario","Registro")"></div>
+
+    <!-- Scripts. -->
+    <script src="~/Scripts/Registro/Registro.js"></script>
+</body>
+</html>
