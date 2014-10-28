@@ -9,6 +9,7 @@ namespace Alluminati.Controllers
     public class VisionController : Controller
     {
         // GET: Vision
+        [Authorize]
         public ActionResult Index()
         {
             return View();

@@ -1,0 +1,56 @@
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\Alluminati.dll.config
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\Alluminati.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\Alluminati.pdb
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\Antlr3.Runtime.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\EntityFramework.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\Newtonsoft.Json.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.Helpers.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.Mvc.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.Optimization.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.Razor.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.WebPages.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.WebPages.Razor.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\WebGrease.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\EntityFramework.xml
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.Helpers.xml
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.Mvc.xml
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.Optimization.xml
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.Razor.xml
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.WebPages.xml
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\System.Web.WebPages.Razor.xml
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\Antlr3.Runtime.pdb
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\bin\Newtonsoft.Json.xml
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\obj\Debug\Alluminati.csprojResolveAssemblyReference.cache
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\obj\Debug\Alluminati.dll
+C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\Alluminati\Alluminati\obj\Debug\Alluminati.pdb
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\Alluminati.dll.config
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\Alluminati.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\Alluminati.pdb
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\Antlr3.Runtime.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\EntityFramework.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\Newtonsoft.Json.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.Helpers.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.Mvc.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.Optimization.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.Razor.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.WebPages.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.WebPages.Razor.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\WebGrease.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\EntityFramework.xml
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.Helpers.xml
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.Mvc.xml
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.Optimization.xml
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.Razor.xml
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.WebPages.xml
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\System.Web.WebPages.Razor.xml
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\Antlr3.Runtime.pdb
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\bin\Newtonsoft.Json.xml
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\obj\Debug\Alluminati.csprojResolveAssemblyReference.cache
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\obj\Debug\Alluminati.dll
+C:\Users\Isidro Aguilar\Source\Repos\Alluminati\Alluminati\obj\Debug\Alluminati.pdb

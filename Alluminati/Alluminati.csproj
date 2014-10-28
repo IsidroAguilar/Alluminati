@@ -47,9 +47,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Assemblies\v4.5\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+    <Reference Include="MySql.Data.Entity, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Assemblies\v4.5\MySql.Data.Entity.EF6.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 6.5.4\Assemblies\v4.0\MySql.Data.Entity.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -125,11 +125,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\EventoServicioController.cs" />
+    <Compile Include="Controllers\ContactanosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MisionController.cs" />
-    <Compile Include="Controllers\ModelosController.cs" />
+    <Compile Include="Controllers\ModelosHombresController.cs" />
+    <Compile Include="Controllers\ModelosMujeresController.cs" />
     <Compile Include="Controllers\PagoServicioController.cs" />
     <Compile Include="Controllers\RegistroController.cs" />
     <Compile Include="Controllers\ValoresController.cs" />
@@ -156,12 +157,17 @@
     <Compile Include="Models\tblLogin.cs">
       <DependentUpon>AlluminatiModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\tblModelos.cs">
+      <DependentUpon>AlluminatiModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\tblUsuarios.cs">
       <DependentUpon>AlluminatiModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Animacion\Animated.css" />
+    <Content Include="Animacion\JavaScriptMin.js" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\bootstrapValidator.css" />
     <Content Include="Content\css\bootstrapValidator.min.css" />
@@ -170,11 +176,24 @@
     <Content Include="Content\css\Login.css" />
     <Content Include="Content\css\Registro.css" />
     <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\style_showcase.css" />
+    <Content Include="Content\img\general\fondo.jpg" />
+    <Content Include="Content\img\general\Logo.jpg" />
+    <Content Include="Content\img\general\Logo.png" />
     <Content Include="Content\video\Alluminati.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="MySql.Data.Entity.dll" />
     <Content Include="Scripts\Login\Login.js" />
+    <Content Include="Scripts\Registro\Registro.js" />
+    <Content Include="Scripts\Shared\bootbox.js" />
+    <Content Include="Scripts\Shared\bootstrap-filestyle.min.js" />
+    <Content Include="Scripts\Shared\bootstrap.js" />
+    <Content Include="Scripts\Shared\bootstrap.min.js" />
+    <Content Include="Scripts\Shared\bootstrapValidator.es_ES.js" />
+    <Content Include="Scripts\Shared\bootstrapValidator.js" />
+    <Content Include="Scripts\Shared\bootstrapValidator.min.js" />
     <EntityDeploy Include="Models\AlluminatiModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AlluminatiModel.Designer.cs</LastGenOutput>
@@ -192,14 +211,6 @@
       <DependentUpon>AlluminatiModel.edmx</DependentUpon>
       <LastGenOutput>AlluminatiModel.cs</LastGenOutput>
     </Content>
-    <Content Include="Scripts\Registro\Registro.js" />
-    <Content Include="Scripts\Shared\bootbox.js" />
-    <Content Include="Scripts\Shared\bootstrap-filestyle.min.js" />
-    <Content Include="Scripts\Shared\bootstrap.js" />
-    <Content Include="Scripts\Shared\bootstrap.min.js" />
-    <Content Include="Scripts\Shared\bootstrapValidator.es_ES.js" />
-    <Content Include="Scripts\Shared\bootstrapValidator.js" />
-    <Content Include="Scripts\Shared\bootstrapValidator.min.js" />
     <None Include="Scripts\Shared\jquery-2.1.1-vsdoc.js" />
     <Content Include="Scripts\Shared\jquery-2.1.1.js" />
     <Content Include="Scripts\Shared\jquery-2.1.1.min.js" />
@@ -235,19 +246,15 @@
     <Content Include="Views\Mision\Index.cshtml" />
     <Content Include="Views\Vision\Index.cshtml" />
     <Content Include="Views\Valores\Index.cshtml" />
-    <Content Include="Views\Modelos\Index.cshtml" />
-    <Content Include="Views\SesionServicio\Index.cshtml" />
-    <Content Include="Views\EventoServicio\Index.cshtml" />
-    <Content Include="Views\PaqueteServicio\Index.cshtml" />
-    <Content Include="Views\SesionViajeServicio\Index.cshtml" />
-    <Content Include="Views\TasaFijaServicio\Index.cshtml" />
     <Content Include="Views\PagoServicio\Index.cshtml" />
     <Content Include="Views\Registro\Index.cshtml" />
+    <Content Include="Views\Contactanos\Index.cshtml" />
+    <Content Include="Views\ModelosMujeres\Index.cshtml" />
+    <Content Include="Views\ModelosHombres\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\fonts\" />
-    <Folder Include="Content\img\general\" />
     <Folder Include="Content\themes\" />
   </ItemGroup>
   <ItemGroup>

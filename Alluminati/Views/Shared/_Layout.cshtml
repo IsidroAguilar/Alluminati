@@ -56,23 +56,43 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img id="logo" src="~/Content/Img/general/micon.png" class="img-responsive" alt="logo"></a>
+                    <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img id="logo" src="~/Content/Img/general/Logo.png" class="img-responsive" alt="logo"></a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
                     <ul class="nav navbar-nav">
-                        <li><a href="@Url.Action("Index", "Modelos")">Modelos</a></li>
-                        <li><a href="@Url.Action("Index", "Valores")">Valores</a></li>
+
+                        @*<li id="menuInicio"><a href="@Url.Action("Index","Home")">Inicio</a></li>*@
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modelos<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="@Url.Action("Index","ModelosMujeres")">Mujeres</a></li>
+                                <li class="divider"></li>
+                                <li><a href="@Url.Action("Index","ModelosHombres")">Hombres</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alluminati<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="@Url.Action("Index","Valores")">Valores</a></li>
+                                <li class="divider"></li>
+                                <li><a href="@Url.Action("Index","Vision")">Vision</a></li>
+                                <li class="divider"></li>
+                                <li><a href="@Url.Action("Index","Mision")">Mision</a></li>
+                            </ul>
+                        </li>
                         <li><a href="@Url.Action("Index", "PagoServicio")">Pago de Servicio</a></li>
-                        <li><a href="@Url.Action("Index", "Valores")">Valores</a></li>
+                        <li><a href="@Url.Action("Index", "Contactanos")">Contactanos</a></li>
+                        
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> Usuario<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="@Url.Action("Index", "Login")"><i class="fa fa-sign-out fa-fw"></i> Crear Nueva Cuenta</a></li>
+                                <li><a href="@Url.Action("Index", "Login")"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a></li>
                             </ul>
                         </li>
                     </ul>

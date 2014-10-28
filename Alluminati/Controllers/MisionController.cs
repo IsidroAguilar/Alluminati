@@ -9,6 +9,7 @@ namespace Alluminati.Controllers
     public class MisionController : Controller
     {
         // GET: Mision
+        [Authorize]
         public ActionResult Index()
         {
             return View();

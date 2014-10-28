@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlluminatiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblLogin">
+    <Key>
+      <PropertyRef Name="IdLogin" />
+    </Key>
+    <Property Name="IdLogin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="FechaHora" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="tblUsuarios" Relationship="Self.FK_tblLogin_tblUsuarios" FromRole="tblLogin" ToRole="tblUsuarios" />
+  </EntityType>
+  <EntityType Name="tblModelos">
+    <Key>
+      <PropertyRef Name="IdModelo" />
+    </Key>
+    <Property Name="IdModelo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Estatura" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tallas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CostoHora" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Estatus" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUsuarios">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Contrasena" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ApellidoP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ApellidoM" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CorreoElectronico" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="Int32" Nullable="false" />
+    <Property Name="Privilegios" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Estatus" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblLogin" Relationship="Self.FK_tblLogin_tblUsuarios" FromRole="tblUsuarios" ToRole="tblLogin" />
+  </EntityType>
+  <Association Name="FK_tblLogin_tblUsuarios">
+    <End Role="tblUsuarios" Type="Self.tblUsuarios" Multiplicity="1" />
+    <End Role="tblLogin" Type="Self.tblLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUsuarios">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="tblLogin">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AlluminatiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblLogin" EntityType="Self.tblLogin" />
+    <EntitySet Name="tblModelos" EntityType="Self.tblModelos" />
+    <EntitySet Name="tblUsuarios" EntityType="Self.tblUsuarios" />
+    <AssociationSet Name="FK_tblLogin_tblUsuarios" Association="Self.FK_tblLogin_tblUsuarios">
+      <End Role="tblUsuarios" EntitySet="tblUsuarios" />
+      <End Role="tblLogin" EntitySet="tblLogin" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

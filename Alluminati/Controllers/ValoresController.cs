@@ -9,6 +9,7 @@ namespace Alluminati.Controllers
     public class ValoresController : Controller
     {
         // GET: Valores
+        [Authorize]
         public ActionResult Index()
         {
             return View();

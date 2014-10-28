@@ -11,6 +11,7 @@
 
     <!-- Fuentes css. -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="~/Animacion/Animated.css" rel="stylesheet" />
     <!-- Estilos. -->
     <link href="~/Content/css/Login.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/css/Site.css" rel="stylesheet" type="text/css" />
@@ -28,39 +29,47 @@
     <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/kendo.all.min.js"></script>
     <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/kendo.aspnetmvc.min.js"></script>
     <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/cultures/kendo.culture.es-ES.min.js"></script>
-    <script src="~/Scripts/kendo.modernizr.custom.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Shared/kendo.modernizr.custom.js"></script>
+    <script src="~/Scripts/Shared/bootstrap.min.js"></script>
     <script src="~/Scripts/Shared/bootstrapValidator.js"></script>
     <script src="~/Scripts/Shared/bootstrapValidator.es_ES.js"></script>
     <script src="~/Scripts/Shared/bootbox.js"></script>
+    <script src="~/Animacion/JavaScriptMin.js"></script>
+
     <!-- FIN Scripts. -->
 </head>
-<body>
+<body class="fondo">
     <!-- Logo -->
     <div>
-        <img id="logo" src="~/Content/Img/general/micon.png" class="img-responsive" alt="logo">
+        <img id="logo" src="~/Content/img/general/Logo.png" class="img-responsive bounceInDown" alt="logo">
     </div>
 
     <!-- Login -->
     <div class="container">
         <div class="form-signin" role="form">
             <form id="formLogin">
-                <h2 class="form-signin-heading">Iniciar Sesión</h2>
+                <h2 class="form-signin-heading bounceInDown">Iniciar Sesión</h2>
                 <div class="form-group">
-                    <input name="Usuario" class="form-control" type="text" placeholder="Usuario" />
+                    <input name="Usuario" class="form-control bounceInLeft" type="text" placeholder="Usuario" />
                 </div>
                 <br />
                 <div class="form-group">
-                    <input id="Contrasena" name="Contrasena" class="form-control" type="password" placeholder="Contraseña" />
+                    <input id="Contrasena" name="Contrasena" class="form-control bounceInLeft" type="password" placeholder="Contraseña" />
                 </div>
                 <br />
-                <button class="btn btn-lg btn-block" type="submit">Entrar</button>
+                <button class="btn btn-lg btn-block bounceInUp" type="submit">Entrar</button>
+                <br />
+                <br />
+                <br />
+                <button class="btn btn-lg btn-block zoomOutLeft" type="button">Registrarse</button>
             </form>
         </div>
+
     </div>
     <!-- FIN de Login -->
     <!-- Datos de rutas. -->
     <div id="Ingresar" data-url="@Url.Action("Ingresar","Login")"></div>
+    <div id="Registrar" data-url="@Url.Action("Index","Registro")"></div>
 
     <!-- Scripts. -->
     <script src="~/Scripts/Login/Login.js"></script>

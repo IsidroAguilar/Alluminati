@@ -20,12 +20,12 @@ namespace Alluminati.Controllers
         }
 
         #region Variables
-        MySqlConnection connection = new MySqlConnection("server=localhost; database= web; Uid=root; pwd= javier;");
+      MySqlConnection connection = new MySqlConnection("server=localhost; database= alluminati; Uid=root; pwd= emmmanuel@1994;");
         #endregion
 
-        public bool PagarLuz(string nombre)
+        public bool PagarServicios(string nombre)
         {
-            MySqlCommand actualizar = new MySqlCommand("spServicioLuz", connection);
+            MySqlCommand actualizar = new MySqlCommand("spServicios", connection);
             actualizar.CommandType = CommandType.StoredProcedure;
             actualizar.Parameters.AddWithValue("@nombreU", nombre);
 
@@ -34,7 +34,7 @@ namespace Alluminati.Controllers
                 connection.Open();
                 actualizar.ExecuteNonQuery();
 
-                if (EnviarEmail(nombre, "Pago de Luz por medio del servicio Alluminati ", "Hola " + nombre + "\nUsted pago su servicio de Luz el día " + DateTime.Now.ToString()
+                if (EnviarEmail(nombre, "Pago de Luz por medio del servicio Alluminati ", "Hola " + nombre + "\nUsted pago su servicios el dia " + DateTime.Now.ToString()
                     + " con el código \nde comprobación 03XVCLUZPAGO89 \nGracias por usar nuestro servicio."))
                     return true;
                 return true;
@@ -73,6 +73,24 @@ namespace Alluminati.Controllers
             }
             catch (Exception) { return false; }
 
+        }
+
+
+        public bool AumentarMonto(string nombre, int cantidad)
+        {
+            MySqlCommand actualizar = new MySqlCommand("aumentarMonto", connection);
+            actualizar.CommandType = CommandType.StoredProcedure;
+            actualizar.Parameters.AddWithValue("@nombreU", nombre);
+            actualizar.Parameters.AddWithValue("@montoU", cantidad);
+
+            try
+            {
+                connection.Open();
+                actualizar.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception) { return false; }
+            finally { connection.Close(); }
         }
     }
 }
